@@ -1,4 +1,5 @@
 ﻿using Customer_Portal.Models.Common;
+using Customer_Portal.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;

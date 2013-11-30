@@ -188,11 +188,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\AddressType.cs" />
     <Compile Include="Models\AOCustomerDb.cs" />
-    <Compile Include="Models\CustomerOrder.cs" />
+    <Compile Include="Models\Jobs\Envelopes\Envelope.cs" />
     <Compile Include="Models\Jobs\Envelopes\EnvelopeArea.cs" />
     <Compile Include="Models\Common\Font.cs" />
     <Compile Include="Models\Common\ExcessOption.cs" />
@@ -205,6 +204,8 @@
     <Compile Include="Models\Jobs\Inserts\ShippedInsert.cs" />
     <Compile Include="Models\Common\ShortageOption.cs" />
     <Compile Include="Models\Jobs\Inserts\UploadedInsert.cs" />
+    <Compile Include="Models\Jobs\Order.cs" />
+    <Compile Include="Models\Jobs\OrderType.cs" />
     <Compile Include="Models\Jobs\Statements\Statement.cs" />
     <Compile Include="Models\Jobs\Statements\StatementAction.cs" />
     <Compile Include="Models\Jobs\Statements\Graphic.cs" />
