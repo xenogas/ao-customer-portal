@@ -1,0 +1,17 @@
+﻿@model Customer_Portal.Models.Jobs.Order
+@{
+    ViewBag.Title = "ReviewOrder";
+}
+
+@Html.Partial("~/Views/Customer/_Menu.cshtml")
+
+<h2>ReviewOrder</h2>
+@if( Model != null ) 
+{
+<div>
+	<p>ID: @Model.Id</p>
+	<p>Type: @Model.Type.TypeName</p>
+	<p>Run Date: @Model.RunDate</p>
+	<p>Envelope: @Model.Envelope</p>
+</div>
+}

@@ -36,6 +36,24 @@ namespace Customer_Portal.Models
 		// Orders
 		public DbSet<OrderType> OrderTypes { get; set; }
 		public DbSet<Order> Orders { get; set; }
+		//	get {
+		//		DbSet<Order> orders = 
+		//			.Select(r => new Order
+		//			{
+		//				Id = r.Id,
+		//				Envelope = r.Envelope,
+		//				RunDate = r.RunDate,
+		//				Type = this.OrderTypes
+		//					.FirstOrDefault(t => t.Id == Convert.ToInt32(r.Type))
+		//			}) as DbSet<Order>;
+
+		//		return orders;
+		//	}
+		//	set
+		//	{
+		//		//this.Orders.
+		//	}
+		//}
 
 		// Envelopes
 

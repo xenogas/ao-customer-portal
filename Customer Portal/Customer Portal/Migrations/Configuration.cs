@@ -103,10 +103,12 @@ namespace Customer_Portal.Migrations
 			OrderType bill = context.OrderTypes.FirstOrDefault( t => t.TypeName == "Bill" );
 			OrderType visa = context.OrderTypes.FirstOrDefault( t => t.TypeName == "Visa" );
 
-			context.Orders.AddOrUpdate(
-				new Order { Type = bill, RunDate = new DateTime(2013, 12, 15) },
-				new Order { Type = bill, RunDate = new DateTime(2013, 11, 30) },
-				new Order { Type = visa, RunDate = new DateTime(2013, 12, 15) }
+			//NOTE: updating on the Id is a temporary fix to allow a statically generated 
+			// grouping.  The system will automatically update Id in the future.
+			context.Orders.AddOrUpdate( r => r.Id,
+				new Order { Id = 1, Type = bill, RunDate = new DateTime(2013, 12, 15) },
+				new Order { Id = 2, Type = bill, RunDate = new DateTime(2013, 11, 30) },
+				new Order { Id = 3, Type = visa, RunDate = new DateTime(2013, 12, 14) }
 			);
 		}
 

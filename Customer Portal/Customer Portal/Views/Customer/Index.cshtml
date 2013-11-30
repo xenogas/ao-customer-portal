@@ -1,0 +1,26 @@
+﻿@using Customer_Portal.Models.Jobs;
+@model IEnumerable<Customer_Portal.Models.Jobs.Order>
+@{
+    ViewBag.Title = "Customer Dashboard";
+}
+
+@Html.Partial("~/Views/Customer/_Menu.cshtml")
+
+<div>
+    <!-- Tabs -->
+    <span>Orders</span>
+    <span>Cancelled</span>
+
+    <!-- Data -->
+    <div>
+@foreach (var order in Model)
+{
+	<div>
+		<span>ID: @order.Id</span>
+		<span>Type: @order.Type.TypeName</span>
+		<span>Run Date: @order.RunDate</span>
+		<hr />
+	</div>
+}
+	</div>
+</div>
