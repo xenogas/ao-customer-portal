@@ -1,0 +1,25 @@
+﻿ul#menu {
+	font-size: 18px;
+	font-weight: 800; /*extra bold*/
+	margin: 0 0 5px;
+	text-align: right;
+}
+
+ul#menu li {
+	display: inline;
+	padding-left: 15px;
+}
+
+ul#menu li a {
+	color: #999;
+	text-decoration:none;
+}
+
+ul#menu li a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+/* Look here at possibly setting the current page to 'active' from the HTML helper
+ * http://stackoverflow.com/questions/6323021/better-way-to-get-active-page-link-in-mvc-3-razor/6323032#6323032	
+ */

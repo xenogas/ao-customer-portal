@@ -68,6 +68,52 @@ namespace Customer_Portal.Controllers
 			return View();
 		}
 
+		// 
+		// POST: /Account/ForgotPassword
+
+		[HttpPost]
+		[AllowAnonymous]
+		[ValidateAntiForgeryToken]
+		public ActionResult ForgotPassword(LoginModel model)
+		{
+			//TODO: Verify Username
+
+			//TODO: Create reset token
+
+			//TODO: Send Reset Email
+ 
+			// Display check email notification
+			//TODO: This functionality has not been included yet
+			return View();
+		}
+
+		//
+		// GET: /Account/ResetPassword
+		// Author: Chris Booth
+		[AllowAnonymous]
+		public ActionResult ResetPassword()
+		{
+			return View();
+		}
+
+		//
+		// POST: /Account/ResetPassword
+		[HttpPost]
+		[AllowAnonymous]
+		[ValidateAntiForgeryToken]
+		public ActionResult ResetPassword(LoginModel model)
+		{
+			//TODO: Validate token & username
+
+				//TODO: Perform password reset
+
+				// Process Login
+				//return Login(model, "/");	// login and return to home (dashboard)
+
+			//TODO: Determine what VIEW this should return
+			return View();
+		}
+
 		//
 		// GET: /Account/Register
 

@@ -1,0 +1,35 @@
+﻿<div class="content-wrapper">
+	<div class="float-left">
+		@*<p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>*@
+		<a href="@Url.Action("Index","Dashboard")">
+			<img src="~/Content/images/AOLogo.gif" />
+		</a>
+	</div>
+
+	<nav class="center">
+		<ul id="menu">
+			<li>@Html.ActionLink("My Dashboard","Index","Dashboard")</li>
+			<li>@Html.ActionLink("Create New", "Index", "Create")</li>
+		</ul>
+	</nav>
+
+	<div class="float-right">
+		<section id="login">
+			@Html.Partial("_LoginPartial")
+		</section>
+	</div>
+
+	@*<div class="float-right">
+		<section id="login">
+			@Html.Partial("_LoginPartial")
+		</section>
+		<nav>
+			<ul id="menu">
+				<li>@Html.ActionLink("Home", "Index", "Home")</li>
+				<li>@Html.ActionLink("About", "About", "Home")</li>
+				<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+				<li>@Html.ActionLink("Customers", "Index", "Customer")</li>
+			</ul>
+		</nav>
+	</div>*@
+</div>

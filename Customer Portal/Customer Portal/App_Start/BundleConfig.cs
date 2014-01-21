@@ -38,6 +38,12 @@ namespace Customer_Portal
 						"~/Content/themes/base/jquery.ui.datepicker.css",
 						"~/Content/themes/base/jquery.ui.progressbar.css",
 						"~/Content/themes/base/jquery.ui.theme.css"));
+
+            bundles.Add(new StyleBundle("~/Content/aocp").Include(
+				"~/Content/site.css",
+				"~/Content/aocp/header.css",
+				"~/Content/aocp/dashboard.css"
+			));
 		}
 	}
 }

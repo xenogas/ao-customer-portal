@@ -1,0 +1,51 @@
+﻿#sub-menu {
+	background-color: aqua;
+	margin: 10px;
+}
+nav#sub-menu a {
+	margin-right: 5px;
+	line-height: 150%;
+	border: 2px solid black;
+}
+
+#job-container {
+	background-color: purple;
+	padding: 10px;
+}
+
+.job {
+	background-color: orange;
+	margin: 20px 20px 20px 20px;
+	height: 60px;
+}
+
+.job .actions {
+	background-color: burlywood;
+	float: right;
+}
+
+/* Status Icons */
+.job .status {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+}
+.job .status.waiting {
+	background-color: red;
+}
+.job .status.processing {
+	background-color: yellow;
+}
+.job .status.done {
+	background-color: green;
+}
+
+/* Job Links */
+.job ul {
+	margin: 0 5px 0 0;
+	padding: 0px;
+}
+.job ul li {
+	list-style-type: none;
+}
